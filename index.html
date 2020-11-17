@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Display Webcam Stream</title>
+        <meta charset="utf-8">
+        <style>
+        video {
+            width: 500px;
+            height: 350px;
+            background-color: #666;
+        }
+        </style>
+    </head>
+    <body onload="start();">
+        <h1>Webcam Stream</h1>
+        <video autoplay="true" id="video"></video>
+        <br>
+        <button id="start">Start Video</button>
+        <button id="stop">Stop Video</button>
+    </body>
+</html>
