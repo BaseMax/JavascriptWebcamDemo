@@ -1,3 +1,10 @@
+/*
+ * @Name:Javascript Webcam Demo
+ * @Date: 2020-11-18
+ * @Author: Max Base
+ * @Repository: https://basemax.github.io/JavascriptWebcamDemo
+ */
+
 var video = document.querySelector("#video");
 var startVideo = document.querySelector("#start");
 var stopVideo = document.querySelector("#stop");
