@@ -13,7 +13,7 @@ startVideo.addEventListener("click", start, false);
 stopVideo.addEventListener("click", stop, false);
 
 function start() {
-    if(navigator.mediaDevices.getUserMedia) {
+    if(navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
         navigator.mediaDevices.getUserMedia({ video: true })
         .then(function(stream) {
             video.srcObject = stream;
