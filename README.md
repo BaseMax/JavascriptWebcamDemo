@@ -6,6 +6,8 @@ Get Webcam frames in **javascript** and Watch Webcam Stream in video tag.
 
 [![Javascript Webcam Demo](demo.jpg)](https://basemax.github.io/JavascriptWebcamDemo/)
 
+Some of the code is taken from sources on the Internet.
+
 ### I not have a webcam, So how to test?
 
 Unfortunately, I do not have a webcam or microphone in my personal system.
