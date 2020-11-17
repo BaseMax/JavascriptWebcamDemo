@@ -1,6 +1,21 @@
 # Javascript Webcam Demo
 
+Get Webcam frames in **javascript** and Watch Webcam Stream in <video> tag.
+
 ![Javascript Webcam Demo](demo.jpg)
+
+### I not have a webcam, So how to test?
+
+Unfortunately, I do not have a webcam or microphone in my personal system.
+So you might be wondering how I tested the script?
+
+Given that my operating system is **Linux**. I activated the `v4l2loopback` module.
+And with the help of **ffmpeg** I simulated a virtual webcam.
+
+```
+$ sudo modprobe v4l2loopback
+$ ffmpeg -f x11grab -r 15 -s 512x512 -i :0.0+0,0 -vcodec rawvideo -pix_fmt yuv420p -threads 0 -f v4l2 /dev/video0
+```
 
 ---------
 
